@@ -1,0 +1,5 @@
+# English strings go here for Rails i18n
+en:
+  project_reply_to:
+    reply_to: reply_to field
+    reply_to_info: select from projects' custom fields what field will be used as reply_to field in the issues' notifications

@@ -1,0 +1,7 @@
+<p>
+  <%= label 'settings[reply_to_field]', l(:reply_to, scope: :project_reply_to) %>
+  <%= select_tag 'settings[reply_to_field]',
+                 options_from_collection_for_select(ProjectCustomField.all, 'id', 'name', @settings[:reply_to_field]),
+                 include_blank: true %>
+  <%= content_tag :em, l(:reply_to_info, scope: :project_reply_to), class: 'info' %>
+</p>
